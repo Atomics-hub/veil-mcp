@@ -1,5 +1,9 @@
 # Veil MCP
 
+[![CI](https://github.com/Atomics-hub/veil-mcp/actions/workflows/ci.yml/badge.svg)](https://github.com/Atomics-hub/veil-mcp/actions/workflows/ci.yml)
+[![Release](https://img.shields.io/github/v/release/Atomics-hub/veil-mcp)](https://github.com/Atomics-hub/veil-mcp/releases)
+[![License: MIT](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
+
 Veil MCP is a local firewall for Model Context Protocol servers. It sits between an AI client and an MCP stdio server, inspects tool descriptors, tool-call arguments, and tool results, then blocks risky activity before it reaches the model or the tool.
 
 It is built for the practical mess of agent work: poisoned tool descriptions, secret-file reads, webhook exfiltration, surprise write tools, and MCP servers that quietly expose more power than you meant to give them.
