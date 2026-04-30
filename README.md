@@ -8,6 +8,8 @@ Veil MCP is a local firewall for Model Context Protocol servers. It sits between
 
 It is built for the practical mess of agent work: poisoned tool descriptions, secret-file reads, webhook exfiltration, surprise write tools, and MCP servers that quietly expose more power than you meant to give them.
 
+![Veil MCP terminal demo](https://raw.githubusercontent.com/Atomics-hub/veil-mcp/main/assets/veil-mcp-demo.gif)
+
 ## Why This Exists
 
 MCP makes AI agents useful because it gives them tools. That also means one bad server, one compromised package, or one prompt-injected tool result can turn into file reads, secret leakage, data exfiltration, or destructive actions.

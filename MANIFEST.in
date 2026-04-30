@@ -5,6 +5,7 @@ include CONTRIBUTING.md
 include PUBLISHING.md
 include LAUNCH.md
 include Makefile
+recursive-include assets *.gif
 recursive-include configs *.json
 recursive-include demos *.py
 recursive-include policies *.json
