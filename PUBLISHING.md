@@ -28,7 +28,7 @@ PyPI project settings:
 - Owner: `Atomics-hub`
 - Repository: `veil-mcp`
 - Workflow: `publish.yml`
-- Environment: leave blank unless you later add one in GitHub Actions
+- Environment: `pypi`
 
 After trusted publishing is configured, publish from GitHub:
 
