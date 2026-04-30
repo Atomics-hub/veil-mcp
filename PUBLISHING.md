@@ -20,6 +20,26 @@ After pushing:
 
 ## PyPI
 
+Preferred path: configure PyPI trusted publishing for this GitHub repository.
+
+PyPI project settings:
+
+- Project name: `veil-mcp`
+- Owner: `Atomics-hub`
+- Repository: `veil-mcp`
+- Workflow: `publish.yml`
+- Environment: leave blank unless you later add one in GitHub Actions
+
+After trusted publishing is configured, publish from GitHub:
+
+```bash
+gh release create v0.1.1 dist/veil_mcp-0.1.1.tar.gz dist/veil_mcp-0.1.1-py3-none-any.whl \
+  --title "Veil MCP v0.1.1" \
+  --notes "Release notes"
+```
+
+Manual token path:
+
 ```bash
 python -m pip install build twine
 python -m build
@@ -45,4 +65,3 @@ Good places to post:
 - Hacker News Show HN.
 - Reddit communities focused on local AI, agent tooling, and security.
 - MCP and AI engineering Discord or Slack communities.
-
