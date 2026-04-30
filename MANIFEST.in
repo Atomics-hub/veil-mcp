@@ -1,0 +1,11 @@
+include LICENSE
+include README.md
+include SECURITY.md
+include CONTRIBUTING.md
+include PUBLISHING.md
+include Makefile
+recursive-include configs *.json
+recursive-include demos *.py
+recursive-include policies *.json
+recursive-include scripts *.py
+recursive-include tests *.py

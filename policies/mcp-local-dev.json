@@ -1,0 +1,51 @@
+{
+  "allowed_servers": [
+    "filesystem",
+    "github",
+    "git"
+  ],
+  "allowed_tools": [
+    "filesystem.read_file",
+    "filesystem.list_directory",
+    "github.search_*",
+    "github.get_*",
+    "git.status",
+    "git.diff",
+    "git.log"
+  ],
+  "blocked_tools": [
+    "terminal.*",
+    "*.execute",
+    "*.run_shell",
+    "*.delete_*",
+    "*.write_file"
+  ],
+  "read_only_servers": [
+    "github",
+    "git"
+  ],
+  "allowed_domains": [
+    "api.github.com",
+    "github.com",
+    "*.githubusercontent.com"
+  ],
+  "allowed_paths": [
+    "./**",
+    "/workspace/**",
+    "/Users/*/Desktop/**"
+  ],
+  "blocked_paths": [
+    "**/.env*",
+    "**/.ssh/**",
+    "**/.aws/**",
+    "**/secrets*",
+    "**/*credentials*",
+    "**/*private*key*"
+  ],
+  "require_approval_tools": [
+    "github.create_pull_request",
+    "github.create_issue",
+    "git.commit",
+    "git.push"
+  ]
+}

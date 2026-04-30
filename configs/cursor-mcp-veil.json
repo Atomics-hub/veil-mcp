@@ -1,0 +1,43 @@
+{
+  "mcpServers": {
+    "filesystem": {
+      "command": "veil-mcp-proxy",
+      "args": [
+        "--server-name",
+        "filesystem",
+        "--policy",
+        "block",
+        "--policy-config",
+        "/absolute/path/to/veil-mcp/policies/mcp-local-dev.json",
+        "--audit-log",
+        "/absolute/path/to/veil-mcp/veil-mcp-audit.jsonl",
+        "--",
+        "npx",
+        "-y",
+        "@modelcontextprotocol/server-filesystem",
+        "/Users/you/project"
+      ]
+    },
+    "github": {
+      "command": "veil-mcp-proxy",
+      "args": [
+        "--server-name",
+        "github",
+        "--policy",
+        "block",
+        "--policy-config",
+        "/absolute/path/to/veil-mcp/policies/mcp-local-dev.json",
+        "--audit-log",
+        "/absolute/path/to/veil-mcp/veil-mcp-audit.jsonl",
+        "--",
+        "npx",
+        "-y",
+        "@modelcontextprotocol/server-github"
+      ],
+      "env": {
+        "GITHUB_PERSONAL_ACCESS_TOKEN": "ghp_replace_me"
+      }
+    }
+  }
+}
+

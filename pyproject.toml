@@ -1,0 +1,46 @@
+[build-system]
+requires = ["setuptools>=77"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "veil-mcp"
+version = "0.1.0"
+description = "A local firewall for MCP tool calls, descriptors, and results."
+readme = "README.md"
+requires-python = ">=3.10"
+license = "MIT"
+authors = [
+  { name = "Atomics Hub" }
+]
+keywords = [
+  "ai",
+  "agent",
+  "firewall",
+  "mcp",
+  "model-context-protocol",
+  "security"
+]
+classifiers = [
+  "Development Status :: 3 - Alpha",
+  "Environment :: Console",
+  "Intended Audience :: Developers",
+  "Intended Audience :: Information Technology",
+  "Programming Language :: Python :: 3",
+  "Programming Language :: Python :: 3.10",
+  "Programming Language :: Python :: 3.11",
+  "Programming Language :: Python :: 3.12",
+  "Topic :: Security",
+  "Topic :: Software Development :: Libraries :: Python Modules"
+]
+dependencies = []
+
+[project.urls]
+Homepage = "https://github.com/Atomics-hub/veil-mcp"
+Repository = "https://github.com/Atomics-hub/veil-mcp"
+Issues = "https://github.com/Atomics-hub/veil-mcp/issues"
+
+[project.scripts]
+veil-mcp-proxy = "veil_mcp.proxy:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]

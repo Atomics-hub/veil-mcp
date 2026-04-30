@@ -1,0 +1,34 @@
+{
+  "allowed_servers": [
+    "demo"
+  ],
+  "allowed_tools": [
+    "demo.read_file"
+  ],
+  "allowed_paths": [
+    "/safe/**",
+    "./public/**"
+  ],
+  "allowed_domains": [
+    "api.github.com"
+  ],
+  "blocked_tools": [
+    "*.write_file",
+    "*.exfiltrate_*",
+    "terminal.*",
+    "*.execute"
+  ],
+  "blocked_paths": [
+    "**/.env*",
+    "**/.ssh/**",
+    "**/*secret*",
+    "**/*credentials*"
+  ],
+  "read_only_tools": [
+    "demo.read_file"
+  ],
+  "require_approval_tools": [
+    "demo.write_file"
+  ]
+}
+
